@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef, Suspense } from 'react';
 import { useParams, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import Tmdb from 'api/tmdb';
+import Tmdb from 'Api/tmdb';
 import MovieInfo from 'components/MovieInfo/MovieInfo';
 
 const tmdb = new Tmdb();

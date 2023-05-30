@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import Tmdb from "api/tmdb";
+import Tmdb from "Api/tmdb";
 import ReviewsList from "components/ReviewsList/ReviewsList";
 
 const tmdb = new Tmdb();

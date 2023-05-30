@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Tmdb from 'api/tmdb';
+import Tmdb from 'Api/tmdb';
 import SerchMovies from 'components/SerchMovies/SerchMovies';
 import TrendingMoviesList from 'components/TrendingMoviesList/TrendingMoviesList';
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Tmdb from "api/tmdb";
+import Tmdb from "Api/tmdb";
 import TrendingMoviesList from "components/TrendingMoviesList/TrendingMoviesList";
 
 const tmdb = new Tmdb();
