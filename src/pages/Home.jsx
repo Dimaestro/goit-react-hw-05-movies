@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Tmdb from "api/tmdb";
 import TrendingMoviesList from "components/TrendingMoviesList/TrendingMoviesList";
 
-
 const tmdb = new Tmdb();
 
 const Home = () => {
