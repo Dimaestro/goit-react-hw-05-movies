@@ -70,28 +70,24 @@ class Tmdb {
 
     try {
       const responce = await axios.request(options);
-      if (info) {
+
+      if (info === '/reviews') {
         const { data: { results } } = responce;
         return results;
       }
+
+      if (info === '/credits') {
+        const { data: {cast} } = responce;
+        return cast;
+      }
+
       const { data } = responce;
       return data;
+
     } catch (error) {
       console.log(error.message);
     }
   }
 }
-
-// useEffect(() => {
-//     const load = async () => {
-//       try {
-//         const result = await tmdb.trendingMovies();
-//         console.log(result);
-//       } catch (error) {
-//         console.log(error.message);
-//       }
-//     }
-//     load();
-//   }, []);
 
 export default Tmdb;
